@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotografi Outdoor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/fav_icon.png" type="image/png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li class="dropdown">
+                <a href="#gallery">Galeri</a>
+                <ul class="dropdown-content">
+                    <li><a href="#gallery">Galeri SMA</a></li>
+                    <li><a href="#graduation-gallery">Galeri Wisuda</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">Hubungi Saya</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <img src="img/background.jpg" alt="Gambar Utama" class="hero-image">
+        <button onclick="document.getElementById('gallery').scrollIntoView()">Lihat Galeri</button>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2 class="scroll-fade-in">Galeri SMA</h2>
+        <div class="image-grid">
+            <img class="scroll-fade-in" src="img/1.jpg" alt="Foto 1">
+            <img class="scroll-fade-in" src="img/2.jpg" alt="Foto 2">
+            <img class="scroll-fade-in" src="img/3.jpg" alt="Foto 3">
+            <img class="scroll-fade-in" src="img/4.jpg" alt="Foto 4">
+        </div>
+    </section>
+
+    <section id="graduation-gallery" class="gallery">
+        <h2 class="scroll-fade-in">Galeri Wisuda</h2>
+        <div class="image-grid">
+            <img class="scroll-fade-in" src="img/wisuda2.jpg" alt="Wisuda 1">
+            <img class="scroll-fade-in" src="img/wisuda3.jpg" alt="Wisuda 2">
+            <img class="scroll-fade-in" src="img/wisuda1.jpg" alt="Wisuda 3">
+            <img class="scroll-fade-in" src="img/wisuda4.jpg" alt="Wisuda 4">
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2 class="scroll-fade-in">Tentang Saya</h2>
+        <p class="scroll-fade-in">Halo!, saya seorang fotografer outdoor. Saya suka memotret keindahan alam dan menciptakan kenangan abadi bagi klien saya.</p>
+    </section>
+
+    <section id="before-after" class="before-after">
+        <h2 class="scroll-fade-in">Sebelum & Sesudah</h2>
+        <main>
+            <div class="container">
+                <div class="image-container">
+                    <img class="image-before slider-image" src="img/Sebelum.jpg" alt="Before photo">
+                    <img class="image-after slider-image" src="img/After.jpg" alt="After photo">
+                </div>
+                <input type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown" class="slider">
+                <div class="slider-line" aria-hidden="true"></div>
+                <div class="slider-button" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 256 256">
+                        <rect width="256" height="256" fill="none"></rect>
+                        <line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                        <line x1="96" y1="128" x2="16" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                        <polyline points="48 160 16 128 48 96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+                        <line x1="160" y1="128" x2="240" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                        <polyline points="208 96 240 128 208 160" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+                    </svg>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="scroll-fade-in">Hubungi Saya</h2>
+        <p class="scroll-fade-in">Jika Anda tertarik, silakan hubungi saya melalui WhatsApp:</p>
+        <a href="https://wa.me/6289524253543" class="whatsapp-button">WhatsApp</a>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
